@@ -6,7 +6,7 @@ PUB = publications
 #  MAI = vlmaz@water.mai.liu.se
 MAI = vlmaz@sky.mai.liu.se
 RSYNC = rsync -e ssh --rsync-path='bin_local/rsync' -auv --delete
-RSYNC = rsync -e ssh --rsync-path='/usr/bin/rsync' -auv --delete
+RSYNC = rsync -e ssh --rsync-path='/usr/bin/rsync' --exclude .git -auv --delete
 LATEX_EXT = 4ct 4tc aux dvi idv lg log tmp xref
 LATEX_GARBAGE = $(patsubst %,*.%,$(LATEX_EXT))
 
