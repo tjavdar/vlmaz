@@ -1,4 +1,4 @@
-NAME = vlmaz
+NAME = vlama82
 
 #----------------------------
 include ../Makefile.common
